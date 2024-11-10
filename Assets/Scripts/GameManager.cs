@@ -185,7 +185,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         // 최고 점수 갱신
         int maxScore = Mathf.Max(score, PlayerPrefs.GetInt("MaxScore"));
-        WebClient11.Instance.Send(maxScore);
+        WebClient11.Instance.Send(maxScore);    
         PlayerPrefs.SetInt("MaxScore", maxScore);
 
         // 게임오버 UI 표시

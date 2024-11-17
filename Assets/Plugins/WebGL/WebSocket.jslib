@@ -16,7 +16,7 @@ mergeInto(LibraryManager.library, {
         var userId = 2;
 
         try {
-            const userIdResponse = await fetch("http://3.34.98.225:8080/api/v1/game/userId", {
+            const userIdResponse = await fetch("https://sucat.shop/api/v1/game/userId", {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${token}`,
@@ -34,7 +34,7 @@ mergeInto(LibraryManager.library, {
             });
             console.log("JSON Data to send:", jsonData);
 
-            const scoreResponse = await fetch("http://3.34.98.225:8080/api/v1/game/score", {
+            const scoreResponse = await fetch("https://sucat.shop/api/v1/game/score", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
